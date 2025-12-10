@@ -20,11 +20,11 @@ const Hero = () => {
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium mb-2 leading-normal">
               Front-End Developer |
-              <span className="text-purple-300"> Webflow </span> & React
+              <span className="text-purple-300"> React </span> & JavaScript
             </h2>
             <p className="text-lg text-gray-300 mb-6 ">
-              Building production-ready Webflow websites and React-based
-              front-end projects
+              Building interactive, responsive front-end applications using
+              React
             </p>
             <div className="flex justify-center md:justify-start space-x-4  ">
               <Link

@@ -20,7 +20,10 @@ const About = () => {
         <p className="text-gray-500 text-center text-lg md:text-2xl max-w-2xl mx-auto mb-8 md:mb-16">
           Get to know my background and my passion
         </p>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-24    ">
+        <div
+          className="flex flex-col md:flex-row items-center justify-between gap-24
+            "
+        >
           <div className="  w-full md:w-5/12   overflow-hidden relative rounded-2xl border-l-2 border-[#31163F] bg-gradient-to-tr from-transparent via-[#31163F] to-transparent  ">
             <motion.img
               initial={{ opacity: 0, y: 50 }}
@@ -39,25 +42,24 @@ const About = () => {
               transition={{ duration: 0.9, ease: 'easeInOut' }}
               viewport={{ once: true, amount: 0.2 }}
             />
-            <div className=" text-center md:text-left ">
+            <div className=" text-center md:text-left     ">
               <h3 className="text-2xl font-semibold mb-6">Get Intro</h3>
-              <p className="text-gray-300 mb-5">
-                Hi, I’m Awal,a Front-End Web Developer currently working at
-                Softvence as a Webflow Developer. Through delivering various
-                client projects, I have gained valuable experience in
-                professional workflow management and maintaining effective
-                client communication.
+              <p className="text-gray-300 mb-5 ">
+                I’m Front-End Developer specializing in React and modern
+                JavaScript. I build interactive UI components, manage
+                application state, and create responsive layouts using modern
+                front-end tools.
               </p>
               <p className="text-gray-300 mb-5">
-                While my main focus is Webflow, I also have practical
-                familiarity with React, Node.js, Express, and MongoDB. I’ve
-                earned certifications in Web Design, Development Fundamentals,
-                and React from Sololearn, and I’m currently enrolled in
-                Harvard’s CS50 to further strengthen my skills.
+                Alongside my front-end development journey, I work
+                professionally as a Webflow Developer at Softvence, where I
+                deliver production-ready client websites. This experience has
+                given me strong fundamentals in layout, responsiveness, and
+                real-world project requirements.
               </p>
               <p className="text-gray-300 mb-10">
-                I enjoy creating modern, responsive, and user-friendly websites
-                that bring ideas to life.
+                I’m currently focused on strengthening my React skills through
+                hands-on personal projects and practical front-end development.
               </p>
               <a
                 href="#"

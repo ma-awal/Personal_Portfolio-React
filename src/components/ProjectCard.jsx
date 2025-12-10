@@ -15,7 +15,7 @@ const ProjectCard = ({ project, isWebflow }) => {
 
       <div className="px-3 space-y-4  ">
         <h3 className="text-xl font-semibold mb-[4px]">{title}</h3>
-        <p className="text-gray-400 mb-4">{description}</p>
+        <p className="text-gray-400 mb-4 line-clamp-2">{description}</p>
         <div className="flex flex-wrap gap-2">
           {Array.isArray(tech) &&
             tech.map((item) => (

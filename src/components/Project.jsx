@@ -6,20 +6,26 @@ import { motion } from 'framer-motion';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const Project = () => {
-  const PROJECTS_PER_PAGE = 3;
+  const PROJECTS_PER_PAGE = 6;
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [techSearchTerm, setTechSearchTerm] = useState('');
 
   const getUniqueCategories = () => {
-    const allCategories = projectData.map((project) => project.category);
-    const specialCategories = ['Webflow', 'Vanilla JS', 'React'];
-    const categories = [
-      'All',
-      ...new Set([...allCategories, ...specialCategories]),
-    ];
-    return categories.filter(Boolean);
+    const desiredOrder = ['React', 'Vanilla JS', 'Webflow'];
+
+    return desiredOrder.filter((category) =>
+      projectData.some(
+        (project) =>
+          project.category === category ||
+          (category === 'Vanilla JS' &&
+            project.tech?.some((tech) =>
+              tech.toLowerCase().includes('javascript')
+            ))
+      )
+    );
   };
+
   const uniqueCategories = getUniqueCategories();
   let filteredProjects = projectData;
 

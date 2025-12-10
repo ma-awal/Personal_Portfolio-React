@@ -3,7 +3,6 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Project from '../components/Project';
 import Experience from '../components/Experience';
-import Review from '../components/Review';
 import ContactSection from '../components/Contact';
 
 const Home = () => {
@@ -14,7 +13,6 @@ const Home = () => {
       <Skills />
       <Project />
       <Experience />
-      <Review />
       <ContactSection />
     </div>
   );

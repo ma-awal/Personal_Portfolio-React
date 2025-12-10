@@ -22,17 +22,10 @@ export const skillData = [
       'Crafting elegant, accessible, and functional layouts using clean code practices.',
     tags: ['HTML', 'CSS', 'JavaScript'],
   },
-  {
-    id: 2,
-    title: 'CMS',
-    icon: SiWebflow,
-    description:
-      'Designing and maintaining CMS-based websites with animations and interactions.',
-    tags: ['Webflow', 'Animation', 'CMS'],
-  },
+
   {
     id: 3,
-    title: 'Frontend Web Development',
+    title: 'Frontend Stack',
     icon: FaReact,
     description:
       'Building responsive, interactive, and modern web apps using powerful frameworks.',
@@ -45,6 +38,14 @@ export const skillData = [
     description:
       'Connecting the client-side with secure APIs, data storage, and authentication.',
     tags: ['Node.js', 'Express', 'MongoDB'],
+  },
+  {
+    id: 2,
+    title: 'CMS',
+    icon: SiWebflow,
+    description:
+      'Designing and maintaining CMS-based websites with animations and interactions.',
+    tags: ['Webflow', 'Animation', 'CMS'],
   },
   {
     id: 5,
