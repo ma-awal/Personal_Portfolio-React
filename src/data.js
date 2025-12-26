@@ -1,15 +1,13 @@
 import project1 from './assets/urban-project.png';
 import project2 from './assets/flexis.png';
-import project3 from './assets/tria-project.png';
-import project4 from './assets/aviva-project.png';
-import project5 from './assets/fob-project.png';
-import project6 from './assets/black-project.png';
-import project7 from './assets/tasker-png.png';
-import project8 from './assets/expense.png';
-import project9 from './assets/projectify.png';
-import project10 from './assets/next-edu.png';
-import project11 from './assets/tech max.png';
-import project12 from './assets/nine-start.png';
+
+import urban from './assets/urban-style.png';
+import foddie from './assets/foodie-express.png';
+import mess from './assets/smart-mess.png';
+import tasker from './assets/tasker-app.png';
+import wallet from './assets/wallet-image.png';
+import project from './assets/project-manager.png';
+import ztrm from './assets/ztrm.png';
 import { FaReact, FaGitAlt, FaTools, FaCode } from 'react-icons/fa';
 import { SiWebflow, SiMongodb } from 'react-icons/si';
 
@@ -67,6 +65,85 @@ export const skillData = [
 export const projectData = [
   {
     id: 1,
+    title: 'UrbanStyle Ecommerce',
+    image: urban,
+    description:
+      'Modern ecommerce platform with admin dashboard, inventory management, and secure checkout using React.',
+    tech: ['React', 'Firebase', 'Bootstarp'],
+    category: 'React',
+    live: 'https://urban-style-app.vercel.app/',
+    code: 'https://github.com/ma-awal/Urban_Style_App',
+  },
+  {
+    id: 2,
+    title: 'FoodieExpress',
+    image: foddie,
+    description:
+      'Real-time food delivery app with live order tracking and kitchen management system using React.',
+    tech: ['React', 'Firebase', 'Bootstarp'],
+    category: 'React',
+    live: 'https://foodie-express-eight.vercel.app/',
+    code: 'https://github.com/ma-awal/Foodie_Express_App',
+  },
+  {
+    id: 3,
+    title: 'Smart Mess Manager',
+    image: mess,
+    description:
+      'Smart mess management tool using React and Firebase for automated meal and expense tracking.',
+    tech: ['React', 'Firebase', 'Bootstarp'],
+    category: 'React',
+    live: 'https://bazar-app-blond.vercel.app/',
+    code: 'https://github.com/ma-awal/Smart_Mess_App',
+  },
+
+  {
+    id: 4,
+    title: 'Task Manager App',
+    image: tasker,
+    description:
+      'Task manager app with React frontend for organizing and tracking self-directed projects',
+    tech: ['Tailwind', 'React', 'Github'],
+    category: 'React', // Added category
+    live: 'https://1-task-manager-app.vercel.app/',
+    code: 'https://github.com/ma-awal/1-TaskManager_App',
+  },
+  {
+    id: 5,
+    title: ' Smart Wallet App',
+    image: wallet,
+    description:
+      'Intuitive React app to track income and expenses with real-time balance updates',
+    tech: ['Tailwind', 'React', 'Github'],
+    category: 'React',
+    live: 'https://2-expense-trakcer-app.vercel.app/',
+    code: 'https://github.com/ma-awal/2_ExpenseTrakcer_App',
+  },
+  {
+    id: 6,
+    title: 'Porject Manager App',
+    image: project,
+    description:
+      'Project management app to organize tasks by status—To-Do, In-Progress, Done, and Revise.',
+    tech: ['Tailwind', 'React', 'Github'],
+    category: 'React',
+    live: 'https://4-project-manager-app.vercel.app/',
+    code: 'https://github.com/ma-awal/4_ProjectManager_App',
+  },
+
+  {
+    id: 7,
+    title: 'Ztrm',
+    image: ztrm,
+    description:
+      'Developed a Webflow site for ZTRM that empowers creators to connect with their..',
+    tech: ['Webflow', 'CMS', 'Animation'],
+    category: 'Webflow',
+    live: 'https://ztrm.webflow.io/',
+    code: 'https://ztrm.webflow.io/',
+  },
+  {
+    id: 8,
     title: 'Urban MakeOver',
     image: project1,
     description:
@@ -77,7 +154,7 @@ export const projectData = [
     code: 'https://www.urbanmakeovers.ca',
   },
   {
-    id: 2,
+    id: 9,
     title: 'Financial freedom',
     image: project2,
     description:
@@ -86,116 +163,6 @@ export const projectData = [
     category: 'Webflow',
     live: 'https://www.schmidt-kanzlei.com/',
     code: 'https://www.schmidt-kanzlei.com/',
-  },
-  {
-    id: 3,
-    title: 'Trial Training, Reimagined',
-    image: project3,
-    description:
-      'Interactive legal training site with realistic simulations and modern design principles.',
-    tech: ['Webflow', 'CMS', 'Animation'],
-    category: 'Webflow',
-    live: 'https://trialsim-3a7037.webflow.io/',
-    code: 'https://trialsim-3a7037.webflow.io/',
-  },
-  {
-    id: 4,
-    title: 'Aviva Medtrans',
-    image: project4,
-    description:
-      'Responsive booking platform for safe, reliable non-emergency medical transportation services.',
-    tech: ['Webflow', 'CMS', 'Animation'],
-    category: 'Webflow',
-    live: 'https://www.avivamedtrans.com/',
-    code: 'https://www.avivamedtrans.com/',
-  },
-  {
-    id: 5,
-    title: 'FoblyTech ',
-    image: project5,
-    description:
-      'Modern logistics platform empowering manufacturers and exporters with reliability.',
-    tech: ['Webflow', 'CMS', 'Animation'],
-    category: 'Webflow',
-    live: 'https://blackhouselogistics.com/',
-    code: 'https://blackhouselogistics.com/',
-  },
-  {
-    id: 6,
-    title: 'BlackHouse Logistics',
-    image: project6,
-    description:
-      'Easy RFID key-fob duplication service with fast online ordering and secure handling.',
-    tech: ['Webflow', 'CMS', 'Animation'],
-    category: 'Webflow',
-    live: 'https://foblytech.webflow.io/',
-    code: 'https://foblytech.webflow.io/',
-  },
-  {
-    id: 7,
-    title: 'TaskManager App',
-    image: project7,
-    description:
-      'Task manager app with React frontend for organizing and tracking self-directed projects',
-    tech: ['Tailwind', 'React', 'Github'],
-    category: 'React', // Added category
-    live: 'https://1-task-manager-app.vercel.app/',
-    code: 'https://github.com/ma-awal/1-TaskManager_App',
-  },
-  {
-    id: 8,
-    title: 'Expense Tracker App',
-    image: project8,
-    description:
-      'Intuitive React app to track income and expenses with real-time balance updates',
-    tech: ['Tailwind', 'React', 'Github'],
-    category: 'React',
-    live: 'https://2-expense-trakcer-app.vercel.app/',
-    code: 'https://github.com/ma-awal/2_ExpenseTrakcer_App',
-  },
-  {
-    id: 9,
-    title: 'Porject Manager',
-    image: project9,
-    description:
-      'Project management app to organize tasks by status—To-Do, In-Progress, Done, and Revise.',
-    tech: ['Tailwind', 'React', 'Github'],
-    category: 'React',
-    live: 'https://4-project-manager-app.vercel.app/',
-    code: 'https://github.com/ma-awal/4_ProjectManager_App',
-  },
-  {
-    id: 10,
-    title: 'NextEdu',
-    image: project10,
-    description:
-      'Comprehensive education management system designed to streamline learning, administration.',
-    tech: ['Bootstarp', 'React', 'Github'],
-    category: 'React',
-    live: 'https://next-edu-two.vercel.app/',
-    code: 'https://github.com/ma-awal/Project_App_NextEdu',
-  },
-  {
-    id: 11,
-    title: 'TechMax',
-    image: project11,
-    description:
-      'Modern tech solutions platform showcasing innovative services and digital transformation.',
-    tech: ['Bootstarp', 'React', 'Github'],
-    category: 'React',
-    live: 'https://techmax.vercel.app/',
-    code: 'https://github.com/ma-awal/Project_App_Techmax',
-  },
-  {
-    id: 12,
-    title: 'NineStar',
-    image: project12,
-    description:
-      'Creative agency website highlighting branding, design, and digital innovation services.',
-    tech: ['Bootstrap', 'JavaScript', 'Github'],
-    category: 'Vanilla JS',
-    live: 'https://ma-awal.github.io/Project_App_Ninestar/ ',
-    code: 'https://github.com/ma-awal/Project_App_Ninestar',
   },
 ];
 export const testimonials = [

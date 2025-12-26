@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const Project = () => {
-  const PROJECTS_PER_PAGE = 6;
+  const PROJECTS_PER_PAGE = 3;
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [techSearchTerm, setTechSearchTerm] = useState('');
