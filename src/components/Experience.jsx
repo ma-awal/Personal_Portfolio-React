@@ -16,7 +16,7 @@ const experienceData = [
     company: 'Harvard University (online)',
     time: 'Ongoing (Enrolled 2024)',
     description:
-      "Enrolled in Harvard's renowned CS50 course, gaining foundational knowledge in computer science, algorithms, and data structures.", // Updated description
+      "Enrolled in Harvard's renowned CS50 course, gaining foundational knowledge in computer science, algorithms, and data structures.",
     icon: 'education',
   },
   {
@@ -73,7 +73,6 @@ function Experience() {
         </p>
 
         <div className="max-w-4xl mx-auto relative">
-          {/* Main Vertical Timeline Line - now purple */}
           <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-0.5 h-full bg-purple-600"></div>
 
           <div className="space-y-12">

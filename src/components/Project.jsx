@@ -49,7 +49,7 @@ const Project = () => {
     }
   }
 
-  // Then filter by tech search term
+  // filter by tech search term
   if (techSearchTerm) {
     const term = techSearchTerm.toLowerCase();
     filteredProjects = filteredProjects.filter((project) =>

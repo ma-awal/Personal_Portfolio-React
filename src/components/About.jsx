@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import aboutImg from '../assets/remove.png';
-import { FaLinkedin } from 'react-icons/fa';
 import portfolio from '../assets/Portfolio.pdf';
 const About = () => {
   return (
@@ -27,7 +26,7 @@ const About = () => {
           <div className="  w-full md:w-5/12   overflow-hidden relative rounded-2xl border-l-2 border-[#31163F] bg-gradient-to-tr from-transparent via-[#31163F] to-transparent  ">
             <motion.img
               initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }} // ✅ fixed
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: 'easeInOut' }}
               viewport={{ once: true, amount: 0.2 }}
               className="w-full h-full object-cover"
@@ -38,7 +37,7 @@ const About = () => {
           <div className=" w-full md:w-6/12">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }} // ✅ fixed
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: 'easeInOut' }}
               viewport={{ once: true, amount: 0.2 }}
             />
@@ -62,39 +61,14 @@ const About = () => {
                 hands-on personal projects and practical front-end development.
               </p>
               <a
-                href="#"
-                download={portfolio}
+                href={portfolio}
+                download
                 className="px-6 py-3  rounded-lg font-medium hover:bg-purple-900 bg-purple-500 transition duration-300"
               >
                 Download Resume
               </a>
             </div>
           </div>
-          {/* <div className="w-full md:w-2/12 ">
-            <div className="relative flex flex-col items-center justify-center my-auto space-y-8 md:space-y-4 z-10">
-              <span className="hidden md:visible absolute h-[400px] my-auto w-[2px] bg-purple-400 -z-10"></span>
-              <div
-                className=" border border-black hover:border-purple-600  
-                    transition-all duration-500   bg-gradient-to-tr from-transparent via-[#76299c] to-transparent  flex flex-col py-5 md:px-6 md:py-4  justify-center items-center w-full rounded-2xl"
-              >
-                <h4 className="text-3xl font-bold text-white">30+</h4>
-                <span className="text-base  font-semibold ">
-                  Project Complted
-                </span>
-              </div>
-
-              <div
-                className="  border border-black hover:border-purple-600  
-                    transition-all duration-500   bg-gradient-to-tr from-transparent via-[#76299c] to-transparent  flex flex-col py-5 md:px-6 md:py-4   justify-center items-center w-full rounded-2xl  "
-              >
-                <h4 className="text-3xl font-bold text-white">20+</h4>
-                <span className="text-base font-semibold  ">
-                  {' '}
-                  Problems Solved
-                </span>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </motion.div>
